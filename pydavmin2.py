@@ -5,8 +5,8 @@ import os
 def usage():
     print(''' 
     This script assumes that you have dav2fs installed on your system, as well as know absolute paths in your system
-    i.e. ~/ is for your home folder, / is root, and that you have understanding of basic filesystem privileges so you know
-    where to make your directory/ where to mount to and if you will be able to access or make said directory.
+    i.e. ~/ is for your home folder, / is root, and that you have understanding of basic filesystem privileges so you 
+    know where to make your directory/ where to mount to and if you will be able to access or make said directory.
           ''')
 
 
