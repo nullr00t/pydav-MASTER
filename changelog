@@ -24,3 +24,4 @@
         Fixed an error where an exit was not possible if selected due to the way the code was executed.
         Added option to unmount.
         Version 1.0 on pydav4py2, pydavmin2, and pydavmin3.
+        Removing prior pydav repos from github. Keeping changelog in tact.
