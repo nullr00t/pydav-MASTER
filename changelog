@@ -1,0 +1,26 @@
+########################################################
+########## Change Log for pyDav ########################
+########################################################
+
+
+2018-10-14
+
+        Intial commit to github. Code is currently NOT in a working state. That will change soon once I have time
+        to work on it. Current version is 0.1, Alpha release.
+
+2018-10-14
+
+        Most of the code is working. Added comments to code to help with trouble spots. Updated version to 0.1.1
+
+2018-10-15
+        The script is working! Now on to improvements and making a minimalistic structured version of it!
+        Any help making this version more secure or compliant is appreciated! Version 1.0!
+
+2018-10-17
+        Changed over to version 1.1 ; re wrote the script for better understanding of logic and error handling.
+
+2018-10-21
+        Version 1.2 on  pydav.py Added some style to the way it is presented in the terminal. Fixed some typos.
+        Fixed an error where an exit was not possible if selected due to the way the code was executed.
+        Added option to unmount.
+        Version 1.0 on pydav4py2, pydavmin2, and pydavmin3.

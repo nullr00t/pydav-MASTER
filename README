@@ -1,0 +1,25 @@
+                                        mmmmm m     m mmmm     mm   m    m
+                                         #   "# "m m"  #   "m   ##   "m  m"
+                                         #mmm#"  "#"   #    #  #  #   #  #
+                                         #        #    #    #  #mm#   "mm"
+                                         #        #    #mmm"  #    #   ##
+                                         Author : Justin Ball SN: nullr00t
+                                         Date: 2018-10-21
+                                         https://github.com/nullr00t
+
+    pyDav is meant as an interactive script to install the dav2fs package on your system and easily mount a webDAV
+ folder that you already know the URL of. I later plan to expand this script to multiple distros and package managers.
+ Windows and macOS already have a semi easy way of mounting webDAV folders as network volumes, so I thought why not
+ create a script that will take most of the work out of it and at least prompt you for the information. Initially I have
+ started using GMX's webDAV folder for experimenting with this on my personal account. Any feedback is welcome.
+
+ pydav.py is a fully interactive script that will walk you through the process using your system's default python
+ interpreter. That being said, I have written it on a system whose default interpreter is python 3 based, therefor it is
+ written in python3 syntax.
+
+ pydav4py2.py is the same as pydav.py but for systems with python 2 as the default interpreter.
+
+ pydavmin3.py is a barebones script for those who want to define absolute mount points themselves and require no walking
+ through of how it works. requires you have dav2fs package installed on your system.
+
+ pydavmin2.py is exactly the same as pydavmin3, just for systems with python 2 as the default interpreter.

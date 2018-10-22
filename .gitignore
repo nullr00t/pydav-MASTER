@@ -1,0 +1,8 @@
+# Ignore folder created by pycharm
+venv/
+# Ignore idea folder
+.idea/
+# Ignore vscode folder
+.vscode/
+#Ignore Dolphin Directory Preferences
+.directory
