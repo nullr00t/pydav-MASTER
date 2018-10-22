@@ -75,30 +75,37 @@ def choice2():
 
 
 mmenu1()
-choice = raw_input('Enter your choice [ 1 - 4 ]\n')
-choice = int(choice)
-if choice == 4:
-    print("Script termination requested, goodbye...")
-    exit()
-if choice == 3:
-    print('''
-\033[1;91m[I]You normally can find the name of the mount by looking for any entries at the bottom of the list\033[1;m
-\033[1;91mor that beging with http or https when you open up a terminal and type mount.\033[1;m
-    ''')
-    davurlpt = raw_input("Please type the name of the webDAV url you have mounted:")
-    os.system("sudo umount" + " " + davurlpt)
-    print("Operation has completed, see line above for error any error info. Exiting...")
-    exit()
-if choice == 1:
-    def installdavfs2():
-        os.system('sudo apt-get update && sudo apt-get install davfs2')
-    installdavfs2()
-if choice == 2:
-    os.system("cd ~/")
-    os.system("ls -l ~/")
-    print("\n\033[1;91m[I]These are files and directories in your home folder.\033[1;m")
-    print("\n\033[1;91m[I]If the line starts with a d, then it is a directory.\033[1;m")
-choice1()
+while True:
+    try:
+        choice = raw_input('Enter your choice [ 1 - 4 ]\n')
+        choice = int(choice)
+        if choice == 4:
+            print("Script termination requested, goodbye...")
+            exit()
+        elif choice == 3:
+            print('''
+            \033[1;91m[I]You normally can find the name of the mount by looking for any entries at the bottom of the list\033[1;m
+            \033[1;91mor that beging with http or https when you open up a terminal and type mount.\033[1;m
+            ''')
+            davurlpt = raw_input("Please type the name of the webDAV url you have mounted:")
+            os.system("sudo umount" + " " + davurlpt)
+            print("Operation has completed, see line above for error any error info. Exiting...")
+            exit()
+        elif choice == 1:
+            def installdavfs2():
+            os.system('sudo apt-get update && sudo apt-get install davfs2')
+            installdavfs2()
+        elif choice == 2:
+            os.system("cd ~/")
+            os.system("ls -l ~/")
+            print("\n\033[1;91m[I]These are files and directories in your home folder.\033[1;m")
+            print("\n\033[1;91m[I]If the line starts with a d, then it is a directory.\033[1;m")
+        else:
+            print("Unexpected error")
+    finally:
+        exit()
+
+
 
 while choicem1 is None:
     choice1()

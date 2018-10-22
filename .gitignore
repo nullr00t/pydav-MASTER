@@ -6,3 +6,7 @@ venv/
 .vscode/
 #Ignore Dolphin Directory Preferences
 .directory
+#Ignore Debugging test folder
+dbg/
+#Ignore safesnips folder
+safesnips/
