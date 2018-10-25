@@ -5,17 +5,18 @@ import getpass
 
 def usage():
     print(''' 
-    This script assumes that you have dav2fs installed on your system. This script is meant to be run with a python2
-    interpreter.
+    This script assumes that you have dav2fs installed on your system. 
+    This script is meant to be run with a python2 interpreter.
+    If you do not have it installed, please run sudo apt-get install davfs2, on Ubuntu and Debian based distros
+    Otherwise consult your distro's package manager and search for appropriate package.
           ''')
 
 
 def options():
     print('''
-                1) Usage
-                2) Mount webDAV folder
-                3) Unmount webDAV folder
-                4) Exit
+                1) Mount webDAV folder
+                2) Unmount webDAV folder
+                3) Exit
                  ''')
 
 
@@ -27,12 +28,10 @@ while True:
             choice = int(choice)
             acc_strings = {'Yes', 'y', 'Y', 'yes', 'Ye', 'ye'}
             unacc_strings = {'No', 'n', 'N', 'no'}
-            if choice == 4:
+            if choice == 3:
                 print("Script termination requested, goodbye...")
                 exit()
             elif choice == 1:
-                usage()
-            elif choice == 2:
                 os.system("cd ~/")
                 os.system("ls -l ~/")
                 print("\n\033[1;91m[Info]These are files and directories in your home folder.\033[1;m")
@@ -47,7 +46,7 @@ while True:
                     os.system("sudo mount -t davfs -o uid=" + u + "," + "gid=" + u + " " + davurl + " " + "~/" + newdir)
                     print("Operation has completed, see line above for error any error info. Exiting...")
                     exit()
-            elif choice == 3:
+            elif choice == 2:
                 choice3opt1 = raw_input("Please type the address of the webDAV server that you have mounted:\n")
                 choice3opt1 = str(choice3opt1)
                 os.system("sudo umount" + " " + choice3opt1)
