@@ -10,13 +10,12 @@ print('''
  #mmm#"  "#"   #    #  #  #   #  # 
  #        #    #    #  #mm#   "mm" 
  #        #    #mmm"  #    #   ##  
-                Version 1.0 for Python2 
-                Explicitly Meant To Be Ran In Python2
+                Version 1.2 for Python3 
     \033[1;91mThe easy python script for setting up mounting and unmounting webDAV folders.\033[1;m
     \033[1;32m+ -- -- +=[ Original Author: Justin Ball sn:nullr00t\033[1;m
     \033[1;91mCheck out my repos on https://github.com/nullr00t for other programs or scripts by me.\033[1;m
     \033[1;91mIf you already have dav2fs installed and have your folders set up,\033[1;m
-    \033[1;91mand have a broader understanding of these scripts please feel free to run pydavmin2.py \033[1;m
+    \033[1;91mand have a broader understanding of these scripts please feel free to run pydavmin3.py \033[1;m
     \033[1;91mScript was originally wrote for Kubuntu 18.04,other Debian based and apt package managed systems \033[1;m
     \033[1;91mmay work but are not guarunteed. Script depends on having the davfs2 package installed on your\033[1;m
     \033[1;91msystem as well as being able to provide a password for sudo privileges to install dav2fs.\033[1;m
